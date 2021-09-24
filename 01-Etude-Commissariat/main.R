@@ -16,10 +16,10 @@ abline(v=moyenne_a_communiquer, col="red")
 abline(v=moyenne, col="blue")
 
 # 2. Intervalle de confiance à 95%
-t.test(data$nombreDePersonnes, conf.level=0.95, alternative = "two.sided")
+t.test(data$nombreDePersonnes, conf.level=0.95, alternative = "less")
 
 # 3. Test d'hypothèse
-t.test(data$nombreDePersonnes, mu=moyenne_a_communiquer, conf.level=0.95, alternative = "two.sided")
+t.test(data$nombreDePersonnes, mu=moyenne_a_communiquer, conf.level=0.95, alternative = "less")
 
 
 # Références
